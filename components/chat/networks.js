@@ -15,11 +15,11 @@ router.post('/', function(req, res){
 
 router.get('/:userId', function(req, res) {    
     controller.listChats(req.params.userId)
-    .then((users) => {
+    .then(users => {
         response.success(req, res, users,200);
     })
     .catch(e =>{
-        response.error(req, res, 'Unexpected Error ', e)
+        response.error(req, res, 'Unexpected Error ',500, e)
     })
 });
 
