@@ -1,2 +1,4 @@
 # dependencies
-/node_modul
+/node_modules
+/uploads
+/public/files
